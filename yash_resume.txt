@@ -1,0 +1,102 @@
+Got it ✅ — you want to take all the resume details you gave and put them into a **clean, well-structured format** that’s consistent for a professional resume or as a text file for your chatbot.
+
+Here’s the updated version in the format you seem to want:
+
+---
+
+**Yash Anil Patil**
+*Generative AI Engineer – Computer Vision*
+📍 Pune, Maharashtra | 📞 +91 96375 87224 | ✉️ [yashpatil7224@gmail.com](mailto:yashpatil7224@gmail.com) | 🇮🇳 Indian
+
+---
+
+### **Professional Summary**
+
+Experienced Python developer with strong expertise in Generative AI and Computer Vision, building intelligent solutions for industrial workflows and image analysis using CNNs. Proficient in FastAPI, Docker, and deploying scalable GenAI bots on AWS EC2 and Bedrock. Hands-on experience in designing real-time inference systems, developing AI-powered chatbots, and streamlining communication/documentation processes.
+
+---
+
+### **Experience**
+
+**Computer Vision Engineer**
+*Wipro Pari Pvt LTD – Pune, Maharashtra | Aug 2024 – Present*
+
+* Designed and implemented Retrieval-Augmented Generation (RAG) pipelines using LangChain, AWS EC2, and Bedrock, leveraging FAISS and ChromaDB for high-performance semantic search and retrieval.
+* Integrated hybrid retrieval techniques (vector similarity search) to improve contextual relevance of generated responses by 25% in AI-driven customer support systems powered by OpenAI GPT-4.
+* Applied advanced prompt engineering strategies (One-Shot, Few-Shot, Chain-of-Thought) to optimize LLM performance for domain-specific question answering.
+* Developed a lightweight AI Gmail automation agent using LangGraph, OpenAI API, and FAISS-indexed historical email embeddings, improving internal communication efficiency.
+* Delivered custom computer vision solutions for industrial automation using Python, OpenCV, and CCTV-based systems for real-time object detection, tracking, and analytics.
+* Integrated YOLOv8 into optimized OpenCV pipelines for low-latency inference on live video streams, enabling edge-based AI processing.
+
+---
+
+### **Education**
+
+* **Bachelor of Engineering (Electrical Engineering)** – PES Modern College of Engineering, Pune – *Jun 2024* | CGPA: 7.55/10
+* **Diploma (Electrical Engineering)** – J. T. Mahajan Polytechnic, Jalgaon – *Jan 2021* | Percentage: 91.56%
+* **10th Std** – Shri Swaminarayan Gurukul Sanstha, Jalgaon – *Jan 2018* | Percentage: 82.40%
+
+---
+
+### **Skills**
+
+* **Programming:** Python, NumPy, Pandas, Matplotlib, Scikit-learn, SQL
+* **AI/ML:** TensorFlow, Deep Learning, Image Processing, YOLOv8, OpenCV, Roboflow
+* **Generative AI Tools:** LangChain, LlamaIndex, Hugging Face Transformers, LangGraph, CrewAI, AutoGPT, n8n
+* **Development & Deployment:** FastAPI, Streamlit, Docker, Kubernetes, AWS EC2, AWS Bedrock
+* **Databases:** FAISS, ChromaDB
+* **Other:** Prompt Engineering, Computer Vision, RAG Pipelines
+
+---
+
+### **Projects**
+
+**HR Bot – AI-Powered Human Resource Assistant**
+
+* Intelligent HR assistant for real-time employee queries (policies, leave, payroll).
+* Integrated RAG-based retrieval from internal HR policy knowledge base.
+* Automated leave balance retrieval & request submission.
+* Increased HR query resolution efficiency by 60% via automation.
+
+**Machine Vision Camera Selection Assistant & Documentation Chatbot**
+
+* Built a Generative AI assistant for industrial camera selection & documentation.
+* Integrated Keyence, Cognex, and Basler technical specs into a searchable knowledge base.
+* Used RAG with OpenAI GPT for contextual Q\&A.
+* Developed with FastAPI + Streamlit UI.
+
+**Real-Time Object Detection using YOLO**
+
+* Built a YOLOv5-based detection system for industrial components.
+* Achieved high accuracy across multiple lighting & background conditions.
+* Integrated into a Python + OpenCV pipeline for real-time processing.
+
+**Semantic Search Engine using FAISS**
+
+* Developed a FAISS-powered semantic search for document retrieval.
+* Used sentence-transformer embeddings for contextually relevant results.
+
+**Multi-Agent Workflow Automation using CrewAI**
+
+* Created multi-agent pipelines for task automation.
+* Integrated with n8n workflows for end-to-end automation.
+
+---
+
+### **Certifications**
+
+* Generative AI
+* Computer Vision
+
+---
+
+This format works perfectly for:
+
+1. **Your chatbot knowledge base** (clean text, easy to load with LangChain’s `TextLoader`).
+2. **Your professional resume** in PDF/DOC format.
+
+---
+
+If you want, I can now **save this exact text into `yash_resume.txt`** so your chatbot can directly read it without format issues. That will also help with better retrieval in your RAG pipeline.
+
+Do you want me to prepare that `.txt` file for you?
