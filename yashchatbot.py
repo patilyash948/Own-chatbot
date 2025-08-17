@@ -27,7 +27,7 @@ def load_vectorstore():
     loader = TextLoader("yash_resume.txt", encoding="utf-8")
     documents = loader.load()
 
-    splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
+    splitter = RecursiveCharacterTextSplitter(chunk_size=200, chunk_overlap=30)
     split_docs = splitter.split_documents(documents)
 
     # Local lightweight model
