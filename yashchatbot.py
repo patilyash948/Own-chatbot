@@ -4,17 +4,13 @@ import streamlit as st
 from langchain_community.document_loaders import TextLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-from langchain_huggingface import HuggingFaceEmbeddings
-# Optional: Use Hugging Face Inference API instead
-# from langchain.embeddings import HuggingFaceInferenceAPIEmbeddings
-from langchain_openai import OpenAI
+from langchain_openai import OpenAIEmbeddings, OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 
 # Load environment variables
 load_dotenv()
 openai_api_key = os.getenv("OPENAI_API_KEY")
-# huggingface_api_key = os.getenv("HUGGINGFACE_API_KEY")  # Optional
 
 # Streamlit UI setup
 st.set_page_config(page_title="Yash's Resume Chatbot", page_icon="🤖", layout="wide")
@@ -24,21 +20,14 @@ st.write("Ask anything based on **yash_resume.txt**")
 # Cache vector store
 @st.cache_resource
 def load_vectorstore():
+    st.info("🔄 Loading resume and embedding with OpenAI...")
     loader = TextLoader("yash_resume.txt", encoding="utf-8")
     documents = loader.load()
 
     splitter = RecursiveCharacterTextSplitter(chunk_size=200, chunk_overlap=30)
     split_docs = splitter.split_documents(documents)
 
-    # Local lightweight model
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-
-    # Optional: Use Hugging Face API instead
-    # embeddings = HuggingFaceInferenceAPIEmbeddings(
-    #     api_key=huggingface_api_key,
-    #     model_name="sentence-transformers/all-MiniLM-L6-v2"
-    # )
-
+    embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
     return FAISS.from_documents(split_docs, embeddings)
 
 vectorstore = load_vectorstore()
