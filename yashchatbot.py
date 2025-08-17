@@ -81,7 +81,3 @@ for msg in st.session_state.messages:
     else:
         with st.chat_message("assistant"):
             st.markdown(msg["content"])
-
-if __name__ == "__main__":
-    app.run()
-
