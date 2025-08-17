@@ -1,9 +1,9 @@
 streamlit
 python-dotenv
 langchain
+langchain-core
 langchain-community
 langchain-openai
-sentence-transformers
 langchain-huggingface
-faiss-cpu
-
+langchain-text-splitters
+sentence-transformers
