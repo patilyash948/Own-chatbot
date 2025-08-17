@@ -14,7 +14,8 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 
 # Streamlit UI setup
 st.set_page_config(page_title="Yash's Resume Chatbot", page_icon="🤖", layout="wide")
-st.title("🤖 Resume Chatbot")
+st.title("🤖 Resume Chatbot — Ask Questions Like You're Interviewing Yash")
+
 
 
 # Cache vector store
