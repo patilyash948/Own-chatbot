@@ -14,13 +14,13 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 
 # Streamlit UI setup
 st.set_page_config(page_title="Yash's Resume Chatbot", page_icon="🤖", layout="wide")
-st.title("🤖 Yash's Resume Chatbot")
-st.write("Ask anything based on **yash_resume.txt**")
+st.title("🤖 Resume Chatbot")
+
 
 # Cache vector store
 @st.cache_resource
 def load_vectorstore():
-    st.info("🔄 Loading resume and embedding with OpenAI...")
+    
     loader = TextLoader("yash_resume.txt", encoding="utf-8")
     documents = loader.load()
 
